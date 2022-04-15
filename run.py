@@ -12,8 +12,5 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('know_ur_sport')
 
-scores = SHEET.worksheet('scores')
-
-data = scores.get_all_values()
-
-print(data)
+print("Welcome to our weekly quiz on your knowledge of all things sport.")
+print("Each week we will ask you ten questions on all types of sport.")
